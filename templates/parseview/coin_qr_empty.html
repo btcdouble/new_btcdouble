@@ -1,0 +1,10 @@
+<div class="header-content" style="margin-top:-20px">
+    <h1 class="heading">Double Your Bitcoin In Just 24 Hours</h1>
+    <p class="text">Minimum 0.001 BTC - Maximum 10 BTC.</p>
+    <p style="color:red">Please Fill up The Form Before Place</p>
+    <form action="" method="POST" hx-post={% url 'qr_code' %} hx-target=".header-content" class="d-flex header-form" id="header-form"> {% csrf_token %}
+        
+        <input type="text" name="coine-number" id="coine-number" placeholder="Enter your BTC Wallet for Payouts">
+        <button class="btn form-btn" id="header-btn">GET START</button>
+ 
+</div>

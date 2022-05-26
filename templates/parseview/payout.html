@@ -1,0 +1,47 @@
+<!--start payout section-->
+<div class="payout" id="payout">
+    <div class="container">
+        <div class="row">
+            <div class="section-head">
+                <h1 class="heading">LIVE PAYOUTS</h1>
+            </div>
+            <div class="table-responsive">
+               <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            {% for text in head_text %}
+                        <th scope="col">{{text}}</th>
+                        {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for data in datas %}
+                            <tr>
+                                {% for text in data %}
+                                {% if forloop.counter == 3 %}
+                                    <td>
+                                        <a href="https://www.blockchain.com/btc/address/{{text}}" target="_blank">{{text}}</a>
+                                    </td>
+                                {% elif forloop.counter == 5 %}
+                                <td>
+                                    <a href="https://www.blockchain.com/btc/address/{{text}}" target="_blank">{{text|truncatechars:35}}</a>
+                                </td>
+                                {% else %}
+                                <td>
+                                    {{text|safe}}
+                                </td>
+                                {% endif %}
+                                {% endfor %}
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                
+               </table>
+            </div>
+            
+            <button class="btn table-btn">VIEW MORE</button>
+            
+        </div>
+    </div>
+</div>
+<!--end payout section-->

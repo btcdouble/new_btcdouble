@@ -1,0 +1,44 @@
+  <!--contact form-->
+  <div class="contact-area" id="contact">
+    <div class="container">
+        <div class="contact">
+            <div class="section-head">
+                <h1 class="heading">We Provide Awesome Service</h1>
+                <p class="text">BTC Doubler is a fully automated Bitcoin investment platform operating with no human intervention. 
+                    Take full advantage of our fast and legit Bitcoin doubler platform.</p>
+            </div>
+            <div class="form-content d-flex">
+                <div class="contact-form">
+                    <form action="{% url 'send_mail' %}" method="POST">{% csrf_token %}
+                        <input type="text" class="contact-input" name="name" id="name" placeholder="Enter Name">
+                        <input type="email" class="contact-input" name="email" id="email" placeholder="Enter Email">
+                        <textarea name="message" id="message" class="contact-input" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+                        <button type="submit" class="btn table-btn">SEND</button>
+                    </form>
+                </div>
+                <div class="form-text">
+                    <div class="contact-item d-flex" style="justify-content: start;">
+                        <i class="fa-solid fa-location-dot contact-icon"></i>
+                        <div class="item-text">
+                            <h6>Address:</h6>
+                            <p>Manchester Arndale, Manchester M4 11AD, England</p>
+                        </div>
+                        
+                    </div>
+                    <div class="contact-item d-flex" style="justify-content: start;">
+                        <i class="fa-solid fa-envelope contact-icon"></i>
+                        <div class="item-text">
+                            <h6>Email:</h6>
+                            <p>support@btcdouble.net</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+<!--end contact form-->
