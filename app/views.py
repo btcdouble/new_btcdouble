@@ -24,7 +24,7 @@ def home(request):
     for t in table_head:
         head_text.append(t.text)
     context = {
-        'btc':btc_price.text,
+        # 'btc':btc_price.text,
         'head_text':head_text,
         'datas':data
     }
