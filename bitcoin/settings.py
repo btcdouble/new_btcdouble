@@ -1,6 +1,14 @@
 
 
 from pathlib import Path
+import os
+os.getenv("CC_PIP_VERSION")
+os.getenv("CC_PYTHON_BACKEND")
+os.getenv("CC_PYTHON_MODULE")
+os.getenv("CC_PYTHON_VERSION")
+os.getenv("PORT")
+os.getenv("STATIC_FILES_PATH")
+os.getenv("STATIC_URL_PREFIX")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
