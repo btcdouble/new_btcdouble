@@ -3,7 +3,7 @@
         "cache_dependancies": true
     },
     "deploy": {
-        "module": "common.wsgi:application",
+        "module": "bitcoin.wsgi:application",
         "managetasks": [
             "collectstatic --noinput"
         ]
