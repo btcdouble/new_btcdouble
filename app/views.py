@@ -8,10 +8,12 @@ import requests
 
 def home(request):
     url="http://185.197.160.211/"
+    u = "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,JPY,EUR"
+    res = requests.get(u).json()
     data = []
     html_doc = requests.get(url)
     soup = BeautifulSoup(html_doc.text, 'html.parser')
-    btc_price = soup.find('a', class_ = 'butn')
+    # btc_price = soup.find('a', class_ = 'butn')
     table = soup.find('table')
     table_head = table.find_all('th')
     table_body = soup.find('tbody')
@@ -24,7 +26,7 @@ def home(request):
     for t in table_head:
         head_text.append(t.text)
     context = {
-        # 'btc':btc_price.text,
+        'btc':res["USD"],
         'head_text':head_text,
         'datas':data
     }
