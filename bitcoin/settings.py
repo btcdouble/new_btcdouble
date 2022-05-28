@@ -22,8 +22,8 @@ SECRET_KEY = 'django-insecure-m)e^z&6yp7b818_klbn-o6xnq1v8)4c!(_$c14)*+yk7r+ujcd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ["127.0.0.1"]
-ALLOWED_HOSTS = ["btcdouble.net","https://www.btcdouble.net", "www.btcdouble.net", "http://www.btcdouble.net"]
+ALLOWED_HOSTS = ["127.0.0.1"]
+# ALLOWED_HOSTS = ["btcdouble.net","https://www.btcdouble.net", "www.btcdouble.net", "http://www.btcdouble.net"]
 
 
 # Application definition

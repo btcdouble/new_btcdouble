@@ -2,37 +2,38 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#"><h1 style="font-size:1.8rem">BTC DOUBLER</h1></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#header">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#services" class="nav-link">FEATURES</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="#payout" class="nav-link">PAYOUTS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#counter" class="nav-link">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#faq" class="nav-link">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">CONTACT</a>
-                </li>
-                </ul>
-                <div class="nav-btn d-flex">
-                    <button class="btn nav-btn">{{btc}}</button>
+                <a class="navbar-brand" href="#"><h1 style="font-size:1.8rem">BTC DOUBLER</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    {% comment %} <span class="navbar-toggler-icon"></span> {% endcomment %}
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">FEATURES</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#payout" class="nav-link">PAYOUTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#counter" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">CONTACT</a>
+                    </li>
+                    </ul>
+                    <div class="nav-btn d-flex">
+                        <button class="btn nav-btn">{{btc}}</button>
+                    </div>
+                    
                 </div>
-                
-            </div>
             </div>
         </nav>
 
@@ -56,4 +57,5 @@
     
    
 </div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <!--end header area-->

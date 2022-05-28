@@ -1,13 +1,15 @@
   <!--contact form-->
   <div class="contact-area" id="contact">
     <div class="container">
-        <div class="contact">
+        <div class="row">
             <div class="section-head">
                 <h1 class="heading">We Provide Awesome Service</h1>
                 <p class="text">BTC Doubler is a fully automated Bitcoin investment platform operating with no human intervention. 
                     Take full advantage of our fast and legit Bitcoin doubler platform.</p>
             </div>
-            <div class="form-content d-flex">
+        </div>
+        <div class="row">
+            <div class="col-md-6">
                 <div class="contact-form">
                     <form action="{% url 'send_mail' %}" method="POST">{% csrf_token %}
                         <input type="text" class="contact-input" name="name" id="name" placeholder="Enter Name">
@@ -17,6 +19,8 @@
                         <button type="submit" class="btn table-btn">SEND</button>
                     </form>
                 </div>
+            </div>
+            <duv class="col-md-6">
                 <div class="form-text">
                     <div class="contact-item d-flex" style="justify-content: start;">
                         <i class="fa-solid fa-location-dot contact-icon"></i>
