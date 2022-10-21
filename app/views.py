@@ -7,17 +7,21 @@ import requests
 
 
 def home(request):
-    url="http://185.197.160.211/"
+    url="https://btc-doubler.net"
     u = "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,JPY,EUR"
     res = requests.get(u).json()
     data = []
-    html_doc = requests.get(url)
+    html_doc = requests.get(url, verify=False)
     soup = BeautifulSoup(html_doc.text, 'html.parser')
-    # btc_price = soup.find('a', class_ = 'butn')
+
+    btc_price = soup.find('a', class_ = 'butn')
     table = soup.find('table')
+    
     table_head = table.find_all('th')
     table_body = soup.find('tbody')
+    
     rows = table_body.find_all('tr')
+   
     for row in rows:
         cols = row.find_all('td')
         col = [t.text.strip() for t in cols]
